@@ -1,0 +1,10 @@
+exclude:
+  - notes
+
+collections:
+  projects-en:
+    output: true
+    permalink: /en/project/:slug
+  projects-de:
+    output: true
+    permalink: /de/project/:slug
