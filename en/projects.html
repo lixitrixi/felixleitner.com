@@ -16,7 +16,12 @@
 <body>
   {% include header.html %}
   <main>
-    Projects EN
+    <div class="projects">
+      {% for project in site.projects-en reversed %}
+        {% if project.unlisted %} {% continue %} {% endif %}
+        {% include project-card.html link=article.url image=article.image title=article.title desc=article.desc %}
+      {% endfor %}
+    </div>
   </main>
   {% include footer.html %}
 </body>
