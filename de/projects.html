@@ -12,12 +12,18 @@
 
   {% include common-css.html %}
 
+  <link rel="stylesheet" href="/assets/css/projects.css">
+
 </head>
 <body>
-  {% include header.html %}
+  {% include header.html page="projects" %}
   <main>
-    Projects DE
+    <div class="projects">
+      {% for project in site.projects-de reversed %}
+        {% if project.unlisted %} {% continue %} {% endif %}
+        {% include project-card.html link=project.url image=project.image title=project.title desc=project.desc %}
+      {% endfor %}
+    </div>
   </main>
-  {% include footer.html %}
 </body>
 </html>

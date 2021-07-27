@@ -1,7 +1,9 @@
-<a href="/{{ project.link }}" class="card"> <!-- this is always just "/" -->
-  <img src="/assets/img/{{ project.image }}" alt=""> <!-- this works -->
+<a href="{{ include.link }}" class="card">
+	<div class="top">
+    <img src="/assets/img/{{ include.image }}" alt="">
+  </div>
   <div class="bottom">
-    <h1>{{ include.title }}</h1> <!-- this doesn't get populated -->
-    <p>{{ project.desc }}</p> <!-- this gets populated -->
+    <h2>{{ include.title }}</h2>
+    <p>{{ include.desc }}</p>
   </div>
 </a>

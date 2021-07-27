@@ -11,34 +11,16 @@
     {% assign sister_url = page.url | replace_first: "de", "en" %}
     {% endif %}
 
-    <a href={{ sister_url | replace: ".html", "" }} class="lang_switch">
-        <p>en/de</p>
-    </a>
+    <!-- Button to change language -->
+    <a href="{{ sister_url | replace: '.html', '' }}" class="lang-switch">en/de</a>
 
     <!-- Set nav selectors based on page language -->
     <div class="nav">
         <a href="/{{ lang }}/about" class="link">
-        <span class="trigger">
-            {% if lang == "en" %} about me {% else %} über mich {% endif %}
-        </span>
+        <span class="trigger{% if include.page == "about" %} active{% endif %}">{% if lang == "en" %}about me{% else %}über mich{% endif %}</span>
         </a>
         <a href="/{{ lang }}/projects" class="link">
-        <span class="trigger">
-            {% if lang == "en" %}
-            projects
-            {% else %}
-            projekte
-            {% endif %}
-        </span>
-        </a>
-        <a href="/{{ lang }}/contact" class="link">
-        <span class="trigger">
-            {% if lang == "en" %}
-            contact
-            {% else %}
-            kontaktieren
-            {% endif %}
-        </span>
+        <span class="trigger{% if include.page == "projects" %} active{% endif %}">{% if lang == "en" %}projects{% else %}projekte{% endif %}</span>
         </a>
     </div>
 
