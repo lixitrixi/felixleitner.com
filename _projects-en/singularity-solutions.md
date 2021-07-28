@@ -1,5 +1,5 @@
 ---
-layout: "project"
+layout: "project-page"
 image: "mountains.png"
 title: "Singularity Solutions"
 desc: "A one-page showcase website I created for an in-school English project."

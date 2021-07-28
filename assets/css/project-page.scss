@@ -1,5 +1,10 @@
 ---
 ---
+.top {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
 
 .back-arrow {
   width: 25px;
@@ -12,28 +17,26 @@
   }
 }
 
-.lang_switch {
+.lang-switch {
   text-align: center;
   margin-left: auto;
   margin-right: 30px;
-  width: 60px;
-  height: 30px;
-  background: white;
+  padding: 5px 8px;
   border-radius: 10px;
+
+  background: transparent;
+  color: black;
+  transition: background 0.2s, color 0.2s;
+
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
-  transition: background 0.2s;
-  & p {
-    color: black;
-    transition: color 0.2s;
-    line-height: 30px;
-    }
+
+  mix-blend-mode: multiply;
+
   &:hover {
     background: black;
-    & p {
-      color: white;
-      }
-    }
+    color: white;
+  }
 }
 
 main {

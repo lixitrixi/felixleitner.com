@@ -10,7 +10,7 @@
     <meta property="theme-color" content="#F1C40F">
   </head>
   <body>
-    <header>
+    <header class="top">
       {% assign lang = page.url | slice: 1,2 %}
       
       <div class="back-arrow">
@@ -25,9 +25,7 @@
       {% endif %}
   
       <!-- Button to change language -->
-      <a href="{{ sister_url | replace: '.html', '' }}" class="lang_switch">
-          <p>en/de</p>
-      </a>
+      <a href="{{ sister_url | replace: '.html', '' }}" class="lang-switch">en/de</a>
     </header>
     
     <main>
