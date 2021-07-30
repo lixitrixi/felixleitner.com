@@ -18,6 +18,7 @@
 <body>
   {% include header.html page="projects" %}
   <main>
+    <h1>Featured Projects</h1>
     <div class="projects">
       {% for project in site.projects-de reversed %}
         {% if project.unlisted %} {% continue %} {% endif %}

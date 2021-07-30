@@ -1,8 +1,9 @@
 ---
 ---
-.bg {
+main {
   /* The image used */
-  background-image: url("https://picsum.photos/1800/1200");
+  // background-image: url("https://picsum.photos/1800/1200");
+  background-image: url("/assets/img/home.jpeg");
 
   /* Full height */
   height: 100vh; 
@@ -16,4 +17,33 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.intro {
+  width: 90%;
+  max-width: 900px;
+  padding: 30px;
+
+  position: absolute;
+  left: 45vw;
+  top: 20vh;
+
+  border-radius: 30px;
+
+  // backdrop-filter: blur(10px);
+
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 60px;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+}
+
+#me-img {
+filter: grayscale(100%);
 }

@@ -30,16 +30,15 @@ h1 {
   color: black;
   font-family: 'Montserrat', sans-serif;
   &:hover {
-    box-shadow: 0px 0px 15px -6px black;
+    box-shadow: 0px 2px 12px -6px black;
   }
   .top {
     height: 200px;
-    overflow: hidden;
-    box-shadow: none;
-    img {
-      width: 100%;
-      min-height: 200px;
-    }
+    width: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .bottom {
     padding: 13px 15px;
