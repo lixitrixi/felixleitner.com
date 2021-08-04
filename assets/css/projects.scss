@@ -39,9 +39,12 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    box-shadow: inset 0px -5px 9px -11px black;
   }
   .bottom {
     padding: 13px 15px;
+    height: 115px;
     h2 {
       font-size: 19px;
       margin-bottom: 10px;

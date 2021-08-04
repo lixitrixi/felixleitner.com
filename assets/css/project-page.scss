@@ -9,6 +9,9 @@
 .back-arrow {
   width: 25px;
   padding: 30px;
+  img {
+    width: 100%;
+  }
   a > img {
   transition: transform 0.2s;
   }
@@ -94,9 +97,10 @@ main {
   }
 }
 
-img {
+.demo-img {
   border-radius: 10px;
   width: 100%;
+  box-shadow: 0px 2px 10px -6px black;
 }
 
 .content {

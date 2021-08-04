@@ -20,7 +20,7 @@
   <main>
     <h1>Featured Projects</h1>
     <div class="projects">
-      {% for project in site.projects-en reversed %}
+      {% for project in site.projects-en %}
         {% if project.unlisted %} {% continue %} {% endif %}
         {% include project-card.html link=project.url image=project.image title=project.title desc=project.desc %}
       {% endfor %}
