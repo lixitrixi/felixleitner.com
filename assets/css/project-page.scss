@@ -59,6 +59,7 @@ main {
 .timeframe {
   color: grey;
   font-size: 23px;
+  font-weight: 500;
   margin-top: 8px;
   margin-bottom: 15px;
 }
@@ -68,6 +69,7 @@ main {
   display: flex;
   align-items: center;
   font-size: 20px;
+  font-weight: 400;
   svg {
     width: 25px;
   }
@@ -89,8 +91,9 @@ main {
 .tools {
   margin-bottom: 20px;
   font-size: 18px;
+  font-weight: 500;
   span {
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 
@@ -102,11 +105,13 @@ main {
 
 .content {
   font-size: 20px;
+  font-weight: 400;
 
   line-height: 27px;
   text-align: justify;
   text-justify: inter-word;
   h1 {
     font-size: 27px;
+    font-weight: 500;
   }
 }
