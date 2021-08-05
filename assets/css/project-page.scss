@@ -54,12 +54,10 @@ main {
   margin-top: -50px;
   font-family: 'Roboto Slab', serif;
   font-size: 50px;
-  font-weight: 500;
 }
 
 .timeframe {
   color: grey;
-  font-weight: 600;
   font-size: 23px;
   margin-top: 8px;
   margin-bottom: 15px;
@@ -89,11 +87,10 @@ main {
 }
 
 .tools {
-  font-weight: 500;
   margin-bottom: 20px;
   font-size: 18px;
   span {
-    font-weight: 700;
+    font-weight: bold;
   }
 }
 
