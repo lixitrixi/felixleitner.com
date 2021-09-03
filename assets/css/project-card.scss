@@ -1,0 +1,55 @@
+---
+---
+.card {
+    width: 200px;
+    height: 200px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 10px;
+
+    transition: all 0.2s;
+    transform-origin: top left;
+
+    .bubble {
+        display: none;
+        width: auto;
+        max-width: 190px;
+        height: auto;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 2;
+        background-color: #131313cc;
+        border-radius: 500px;
+        transition: all 0.2s;
+        opacity: 0;
+        p {
+            margin: 0 10px;
+        }
+    }
+
+    .desc-bubble {
+        top: 40px;
+        left: 5px;
+        border-radius: 10px;
+        padding: 4px 0;
+        p {
+            font-size: 10px;
+            line-height: 15px;
+            margin: 0 7px;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(2.15);
+        border-radius: 4.65px;
+        .bubble {
+            display: inline-block;
+            opacity: 1;
+        }
+    }
+}

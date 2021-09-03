@@ -1,6 +1,6 @@
 ---
 layout: "project-page"
-image: "tictac10.png"
+icon: "tictac10.png"
 title: "TicTac10"
 desc: "An adversarial AI I wrote to play tic-tac-toe at any board size."
 tools: "Python"

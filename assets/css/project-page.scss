@@ -1,65 +1,86 @@
 ---
 ---
-.top {
-  height: 100px;
-  display: flex;
-  align-items: center;
+:root {
+  --bg-color: #131313;
+  --overlay-color: #262626;
+  --text-color: #fff;
 }
 
-.back-arrow {
-  width: 25px;
-  padding: 30px;
-  img {
-    width: 100%;
-  }
-  a > img {
-  transition: transform 0.2s;
-  }
-  a:hover > img{
-    transform: scale(1.1);
-  }
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
 }
 
-.lang-switch {
-  text-align: center;
-  margin-left: auto;
-  margin-right: 30px;
-  padding: 5px 8px;
-  border-radius: 10px;
+body {
+  padding: 0;
+  margin: 0;
+}
 
-  background: transparent;
-  color: black;
-  transition: background 0.2s, color 0.2s;
-
-  font-family: 'Roboto Slab', serif;
-  text-decoration: none;
-
-  mix-blend-mode: multiply;
-
+.back {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 500;
+  width: 45px;
+  height: 50px;
+  transition: all 0.2s;
+  svg {
+      transform: rotate(90deg);
+      width: 50px;
+      height: 50px;
+  }
   &:hover {
-    background: black;
-    color: white;
+      transform: scale(1.1);
   }
 }
 
 main {
+  min-height: 120vh;
   width: 90%;
   max-width: 900px;
-  margin: 0 auto 60px auto;
-  font-family: 'Montserrat', sans-serif;
+  margin: 90px auto;
+  a {
+    position: relative;
+    margin: 0 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    text-decoration: none;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      margin: 5px 0 0;
+      transition: width 0.2s, opacity 0.2s;
+      background: var(--text-color);
+      opacity: 0;
+      left: 0;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .title {
   margin: 0;
-  margin-top: -50px;
-  font-family: 'Roboto Slab', serif;
+  color: var(--text-color);
+  font-family: bely-display, sans-serif;
   font-size: 50px;
 }
 
 .timeframe {
-  color: grey;
+  color: var(--text-color);
+  font-family: 'Ubuntu', sans-serif;
   font-size: 23px;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 8px;
   margin-bottom: 15px;
 }
@@ -72,35 +93,25 @@ main {
   font-weight: 400;
   svg {
     width: 25px;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2px 7px;
-    margin-left: 5px;
-    transition: color 0.2s, background-color 0.2s;
-    &:hover {
-      background-color: black;
-      color: white;
-    }
+    fill: white;
   }
 }
 
 .tools {
   margin-bottom: 20px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--text-color);
   span {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
-.demo-img {
-  border-radius: 10px;
+.horizontal-line {
   width: 100%;
-  box-shadow: 0px 2px 10px -6px black;
+  height: 2px;
+  background-color: var(--text-color);
 }
 
 .content {
@@ -110,8 +121,11 @@ main {
   line-height: 27px;
   text-align: justify;
   text-justify: inter-word;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--text-color);
   h1 {
     font-size: 27px;
     font-weight: 500;
+    font-family: bely-display, sans-serif;
   }
 }

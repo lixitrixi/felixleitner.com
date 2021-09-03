@@ -3,24 +3,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Felix Leitner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="canonical" href="https://felixleitner.com">
+    <title>Felix Leitner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="canonical" href="https://felixleitner.com">
 
-  <meta property="og:title" content="Felix Leitner">
-  <meta property="og:type" content="website">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Felix Leitner">
+    <meta property="og:type" content="website">
 
-  {% include common-css.html %}
-  <link rel="stylesheet" href="/assets/css/home.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/toolbox.css">
+    <link rel="stylesheet" href="/assets/css/project-card.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/iug0lkg.css">
 </head>
 <body>
-  {% include header.html %}
-  <main>
-    <div class="intro">
-      <h1>Hi, I'm Felix!</h1>
-      <p>I'm a curious high school student who enjoys coding, playing music, and learning new things.</p>
+    <div class="toolbox">
+        <div class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </div>
+        {% include lang-switch.html %}
     </div>
-  </main>
+    <main>
+        <section id="intro">
+            <h1>Hallo, I'm Felix!</h1>
+            <p>I'm a curious high school student who enjoys coding, playing music, and learning new things.</p>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="showcase">
+                {% include project-card.html link="/en/project/tictac10" icon="tictac10.png" title="TicTac10" desc="An adversarial AI I wrote to play tic-tac-toe at any board size." %}
+                {% include project-card.html link="/en/project/orbita" icon="orbita.png" title="Orbita" desc="A simple orbital simulation I created when starting off with Pygame." %}
+                {% include project-card.html link="/en/project/singularity-solutions" icon="singularity.png" title="Singularity Solutions" desc="A one-page showcase website I created for an in-school English project." %}
+                {% include project-card.html link="/en/project/arpeggio" icon="arpeggio.png" title="Arpeggio" desc="A Discord music player bot I created for my friends." %}
+                {% include project-card.html link="/en/project/tictac10" icon="tictac10.png" title="Placeholder" desc="This is a placeholder." %}
+                {% include project-card.html link="/en/project/tictac10" icon="tictac10.png" title="Placeholder" desc="This is a placeholder." %}
+            </div>
+            <a href="/en/projects" class="more">More</a>
+        </section>
+
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="content">
+                <div class="article">
+                    <img src="/assets/img/me.jpg" alt="">
+                    <p>I'm a developer who loves learning and using my knowledge to create smart code. 
+                        My project-based approach has introduced me to multiple topics, including AI, web design, and game development.
+                        I'm currently working on expanding this list and my collection of projects, and I intend to keep it as varied and interesting as I can make it!
+                    </p>
+                    <p>
+                        Outside of developing, I love listening to and playing Irish folk music, as well as geeking out about space travel.
+                        I'm also an avid skiier, snowboarder, and sailor.
+                    </p>
+                </div>
+                <div class="contacts">
+                    <a href="#" target="_blank">View my resume</a>
+                    <a href="mailto:felix@felixleitner.com">Email me</a>
+                    <a href="https://www.linkedin.com/in/felix-leitner-mittersinker-271b09200/" target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn</a>
+                    <a href="https://discordapp.com/users/402954494406819862/" target="_blank" rel="noopener noreferrer">Message me on Discord</a>
+                    <a href="https://www.github.com/lixitrixi" target="_blank" rel="noopener noreferrer">Check out my GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

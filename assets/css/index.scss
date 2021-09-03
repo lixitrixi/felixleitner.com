@@ -1,0 +1,170 @@
+---
+---
+:root {
+    --bg-color: #131313;
+    --overlay-color: #262626;
+    --text-color: #fff;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    min-height: 120vh;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+p {
+    color: var(--text-color);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-family: bely-display, sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+
+    color: var(--text-color);
+    margin: 0 0 30px 0;
+}
+
+section {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#intro {
+    p {
+        font-size: 26px;
+        margin: 0;
+    }
+}
+
+#projects {
+    padding-bottom: 50px;
+    .showcase {
+        display: grid;
+        grid-gap: 30px;
+        margin: 0 auto;
+        justify-content: center;
+        grid-template-columns: repeat(3, 200px);
+        
+        :nth-child(3n) {
+            transform-origin: top right;
+        }
+        
+        :nth-child(4),
+        :nth-child(5) {
+            transform-origin: bottom left;
+        }
+    
+        :last-child {
+            transform-origin: bottom right;
+        }
+    
+        @media only screen and (max-width: 700px) {
+            grid-template-columns: repeat(2, 200px);
+
+            :nth-child(2n) {
+                transform-origin: top right;
+            }
+
+            :nth-child(3) {
+                transform-origin: top left;
+            }
+
+            :last-child {
+                transform-origin: bottom right;
+            }
+        }
+        
+    }
+    .more {
+        background-color: var(--overlay-color);
+        display: block;
+        width: 70px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        line-height: 38px;
+        border-radius: 500px;
+        color: var(--text-color);
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: #333;
+        }
+    }
+}
+
+#about {
+    padding-bottom: 50px;
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        .article {
+            flex: 1;
+            width: 100%;
+            p {
+                text-align: left;
+                text-justify: inter-word;
+            }
+            img {
+                width: 50%;
+                max-width: 200px;
+                float: right;
+                margin: 0 0 10px 20px;
+                filter: grayscale(1);
+                border-radius: 10px;
+            }
+        }
+        .contacts {
+            width: 100%;
+            display: grid;
+            grid-template-rows: repeat(5, 75px);
+            grid-gap: 20px;
+            a {
+                width: 100%;
+                height: 100%;
+                background: var(--overlay-color);
+                border-radius: 10px;
+                text-decoration: none;
+                color: var(--text-color);
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color 0.2s;
+                &:hover {
+                    background: #333;
+                }
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            .contacts {
+                margin-top: -50px;
+            }
+        }
+    }
+}

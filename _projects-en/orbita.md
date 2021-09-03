@@ -1,6 +1,6 @@
 ---
 layout: "project-page"
-image: "orbita.png"
+icon: "orbita.png"
 title: "Orbita"
 desc: "A simple orbital simulation I created when starting off with Pygame."
 tools: "Python / Pygame"

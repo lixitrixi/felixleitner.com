@@ -1,7 +1,8 @@
-<a href="{{ include.link }}" class="card">
-	<div class="top" style="background-image: url('/assets/img/{{ include.image }}');"></div>
-  <div class="bottom">
-    <h2>{{ include.title }}</h2>
-    <p>{{ include.desc }}</p>
-  </div>
+<a href="{{ include.link }}" class="card" style="background-image: url('/assets/icons/{{ include.icon }}');">
+    <div class="bubble">
+        <p class="title">{{ include.title }}</p>
+    </div>
+    <div class="bubble desc-bubble">
+        <p class="desc">{{ include.desc }}</p>
+    </div>
 </a>

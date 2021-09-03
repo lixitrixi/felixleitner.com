@@ -1,0 +1,59 @@
+---
+---
+.toolbox {
+    width: auto;
+    height: auto;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    .navbar {
+        background-color: #131313de;
+        padding: 10px;
+        border-radius: 10px;
+        a {
+            position: relative;
+            margin: 0 10px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 300;
+            color: var(--text-color);
+            text-decoration: none;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                width: 0;
+                height: 2px;
+                margin: 5px 0 0;
+                transition: width 0.2s, opacity 0.2s;
+                background: var(--text-color);
+                opacity: 0;
+                left: 0;
+            }
+            &:hover {
+                &:after {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .lang-switch {
+        background-color: #131313de;
+        color: var(--text-color);
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 7px 8px;
+        border-radius: 500px;
+        margin: 0px 10px;
+        transition: background-color 0.2s, color 0.2s;
+        &:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+    }
+}
