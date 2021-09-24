@@ -20,9 +20,11 @@ body {
 
 main {
     min-height: 120vh;
-    width: 90%;
-    max-width: 900px;
+    width: calc(100vw-140px);
+    max-width: 1100px;
     margin: 50px auto;
+    margin-bottom: 50px;
+    padding: 0 70px;
     text-align: center;
 }
 
@@ -64,38 +66,9 @@ p {
 
 .showcase {
     display: grid;
-    grid-gap: 30px;
-    margin: 0 auto;
+    grid-gap: 10px;
+    aspect-ratio: 2;
     justify-content: center;
-    grid-template-columns: repeat(4, 200px);
-    
-    :nth-child(4n) {
-        transform-origin: top right;
-    }
-
-    @media only screen and (max-width: 950px) {
-        grid-template-columns: repeat(3, 200px);
-        :nth-child(4n) {
-            transform-origin: top left;
-        }
-
-        :nth-child(3n) {
-            transform-origin: top right;
-        }
-    }
-
-    @media only screen and (max-width: 750px) {
-        grid-template-columns: repeat(2, 200px);
-        :nth-child(4n) {
-            transform-origin: top left;
-        }
-
-        :nth-child(3n) {
-            transform-origin: top left;
-        }
-
-        :nth-child(2n) {
-            transform-origin: top right;
-        }
-    }
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
