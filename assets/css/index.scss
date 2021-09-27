@@ -64,17 +64,14 @@ section {
     padding-bottom: 50px;
     .showcase {
         display: grid;
-        grid-gap: 10px;
-        aspect-ratio: 2;
+        grid-gap: 0px;
         justify-content: center;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        overflow: hidden;
+        border-radius: 4px;
 
         @media only screen and (max-width: 800px) {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            aspect-ratio: 0.5;
-            grid-gap: 15px;
         }
     }
     .more {
