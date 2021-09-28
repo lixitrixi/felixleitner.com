@@ -15,7 +15,7 @@
     .overlay {
         width: 100%;
         height: 100%;
-        background-color: #111d;
+        background-color: #999d;
         opacity: 0;
         transition: all 0.2s;
         vertical-align: middle;
@@ -24,7 +24,8 @@
             top: 50%;
             transform: translate(0, -50%);
 
-            color: var(--text-color);
+            // color: var(--text-color);
+            color: black;
             font-size: 20px;
             text-align: center;
         }
@@ -34,6 +35,7 @@
     &:focus {
         .overlay {
             opacity: 1;
+            backdrop-filter: blur(3px);
         }
     }
 }

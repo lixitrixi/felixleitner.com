@@ -1,6 +1,6 @@
 ---
 layout: "project-page"
-image: "singularity.png"
+icon: "singularity.png"
 title: "Singularity Solutions"
 desc: "Eine kurze Website, die ich für ein Englischprojekt in der Schule kreiert habe."
 tools: "HTML / CSS"

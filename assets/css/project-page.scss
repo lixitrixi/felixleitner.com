@@ -128,4 +128,14 @@ main {
     font-weight: 500;
     font-family: bely-display, sans-serif;
   }
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .caption {
+    text-align: center;
+    font-size: 16px;
+    color: #aaa;
+    margin-top: -15px;
+  }
 }

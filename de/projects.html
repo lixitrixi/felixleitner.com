@@ -30,7 +30,7 @@
         <main>
             <h1>Projekte</h1>
             <div class="showcase">
-                {% for project in site.projects-en %}
+                {% for project in site.projects-de %}
                     {% if project.unlisted %} {% continue %} {% endif %}
                     {% include project-card.html link=project.url icon=project.icon title=project.title desc=project.desc %}
                 {% endfor %}

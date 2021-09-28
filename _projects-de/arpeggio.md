@@ -1,6 +1,6 @@
 ---
 layout: "project-page"
-image: "arpeggio.png"
+icon: "arpeggio.png"
 title: "Arpeggio"
 desc: "Ein Discord Musik Bot, den ich für meine Freunde kreiert habe."
 tools: "Python / Discord.py / Wavelink / Gravit"
