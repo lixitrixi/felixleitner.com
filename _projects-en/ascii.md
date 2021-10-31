@@ -1,6 +1,6 @@
 ---
 layout: "project-page"
-icon: ""
+icon: "ascii.png"
 title: "ASCII"
 desc: ""
 tools: "Python / Pillow"
