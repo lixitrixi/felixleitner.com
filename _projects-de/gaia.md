@@ -1,6 +1,6 @@
 ---
 layout: "project-page"
-icon: "template.png"
+icon: "gaia.gif"
 title: "Gaia"
 desc: ""
 tools: "Discord / Gravit"
