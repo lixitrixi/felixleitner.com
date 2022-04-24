@@ -5,7 +5,7 @@ title: "Singularity Solutions"
 desc: "Eine kurze Website, die ich für ein Englischprojekt in der Schule kreiert habe."
 tools: "HTML / CSS"
 timeframe: "Januar 2021"
-link: "http://felixleitner.com/singularity-solutions/"
+link: "http://felixleitner.com/singularity/"
 source: "https://github.com/lixitrixi/singularity"
 ---
 Zu Beginn meines zweiten Schulquartals begann meine Englischklasse ein neues Projekt, das sich auf innovatives Denken konzentrierte und die Schüler in die Schritte einführte, die zum Aufbau eines erfolgreichen Unternehmens notwendig sind. Teilnehmende Gruppen erstellten Konzepte für neue Produkte, für die sie eine Nachfrage in der Schulgemeinschaft sahen. Diese Produkte könnten realistisch oder Science-Fiction sein, wie auch das, für das mein Partner und ich uns entschieden haben: das HackPack. Unser Konzept für dieses Produkt war ein futuristischer Rucksack, der in einer Taschendimension ein unbegrenztes Gewicht und Volumen halten konnte.
