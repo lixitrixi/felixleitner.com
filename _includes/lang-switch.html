@@ -1,9 +1,0 @@
-{% assign lang = page.url | slice: 1,2 %}
-
-{% if lang == "en" %}
-{% assign sister_url = page.url | replace_first: "en", "de" %}
-{% else %}
-{% assign sister_url = page.url | replace_first: "de", "en" %}
-{% endif %}
-
-<a href="{{ sister_url | replace: '.html', '' }}" class="lang-switch">en/de</a>

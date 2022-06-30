@@ -1,0 +1,36 @@
+---
+---
+.scene {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-top: 40px;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 60px;
+    .navlink {
+        height: 40px;
+        margin: 0 40px;
+        text-decoration: none;
+        color: var(--dark);
+        // font-family: 'Montserrat', sans-serif;
+        font-family: 'Patrick Hand', cursive;
+        font-size: 26px;
+        letter-spacing: 1px;
+        transition: color 0.1s ease;
+        &:hover,
+        &:focus {
+            color: var(--text);
+        }
+    }
+    .navlink.active {
+        color: var(--highlight);
+    }
+}

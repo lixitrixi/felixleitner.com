@@ -1,10 +1,12 @@
 exclude:
   - notes
 
+domain: felixleitner.com
+
 collections:
-  projects-en:
+  projects:
     output: true
-    permalink: /en/project/:slug
-  projects-de:
+    permalink: /w/:slug
+  pages:
     output: true
-    permalink: /de/project/:slug
+    permalink: /:slug
