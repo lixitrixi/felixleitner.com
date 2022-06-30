@@ -25,7 +25,7 @@ Although I hadn't had much interest in the 4X games (Civilization, Hearts of Iro
 <cap>A map of the solar system I created under my nation's space exploration program, MASA (Miferan Aeronautics and Space Administration, haha)</cap>
 
 <img src="/assets/img/miferiameme.png" width="700px">
-<cap>A small comic I made poking fun at how quickly Miferia colonized Habiis for its oil</cap>
+<cap>A countryballs comic I made poking fun at how quickly Miferia colonized Habiis for its oil</cap>
 
 <img src="/assets/img/notula.png" width="600px">
 <cap>A daytime landscape of Notula, a dark and distant planet that Miferia colonized shortly before the game ended</cap>
