@@ -5,7 +5,7 @@ title: "Gaia"
 tools: "Discord / Gravit"
 timeframe: "2020-2022"
 ---
-Gaia was a 2 year long political roleplay I was a part of alongside 5 other people. Each member played the part of a country on a fictional planet called Gaia, drafting teaties, declaring war, expanding territories, and developing technologies. In the late stage of the game, we even travelled to other planets to establish colonies.
+Gaia was a 2 year long political roleplay I was a part of together with 5 other people. Each member played the part of a country on a fictional planet called Gaia, drafting treaties, expanding territories, and developing technologies. In the late stage of the game, we even travelled to other planets to establish colonies.
 
 Although I hadn't had much interest in the 4X games (Civilization, Hearts of Iron, etc.) that the game was based on, I found myself very invested. I made flags for my country, the "Miferan Federation", and created some landscapes of interplanetary views. For my art, I mostly used <a>designer.io=a=Gravit</a>, a free vector graphics app. Below is some of the content I created.
 
