@@ -6,7 +6,6 @@
 
 .title {
     font-size: 28px;
-    color: var(--highlight);
     @media (max-width: 700px) {
         font-size: 24px;
     }
@@ -19,25 +18,13 @@
     text-decoration: none;
     width: fit-content;
     margin-bottom: 20px;
-    p {
-        color: var(--text);
-    }
-    svg path {
-        fill: var(--text);
-    }
+    fill: var(--hl);
+    color: var(--hl);
     &:hover,
     &:focus {
         p {
-            color: var(--highlight);
-        }
-        svg path {
-            fill: var(--highlight);
-        }
-    }
-    @media (max-width: 700px) {
-        p {
             text-decoration: underline;
-            text-underline-offset: 4px;
+            text-underline-offset: 2px;
             text-decoration-thickness: 1px;
         }
     }
@@ -87,6 +74,19 @@ hr {
         }
         p {
             line-height: 20px;
+        }
+    }
+}
+
+.back {
+    text-decoration: none;
+    color: var(--hl);
+    &:hover,
+    &:focus {
+        .underlinable {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
         }
     }
 }

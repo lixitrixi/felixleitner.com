@@ -19,18 +19,20 @@
         height: 40px;
         margin: 0 40px;
         text-decoration: none;
-        color: var(--dark);
-        // font-family: 'Montserrat', sans-serif;
+        color: var(--hl);
         font-family: 'Patrick Hand', cursive;
         font-size: 26px;
         letter-spacing: 1px;
-        transition: color 0.1s ease;
         &:hover,
         &:focus {
-            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 2px;
         }
     }
     .navlink.active {
-        color: var(--highlight);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 2px;
     }
 }
