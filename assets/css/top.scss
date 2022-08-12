@@ -19,8 +19,6 @@
         height: 40px;
         margin: 0 40px;
         text-decoration: none;
-        text-underline-offset: 2px;
-        text-decoration-thickness: 1px;
         color: var(--hl);
         font-family: 'Patrick Hand', cursive;
         font-size: 26px;
@@ -28,9 +26,13 @@
         &:hover,
         &:focus {
             text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
         }
     }
     .navlink.active {
         text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
     }
 }
