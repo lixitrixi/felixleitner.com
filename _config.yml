@@ -1,11 +1,14 @@
+domain: felixleitner.com
+
+plugins:
+  - jekyll-pug
+
 collections_dir: collections
 
 collections:
-  pages:
-    output: true
-    permalink: /:path
-    layout: default
+  skills:
+    output: false
   projects:
     output: true
-    permalink: /project/:path/
+    permalink: /project/:slug
     layout: project
