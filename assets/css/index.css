@@ -25,7 +25,7 @@ section { margin: 2rem 0 }
   grid-template-columns: repeat(auto-fit, minmax(var(--size-card-min), 1fr));
 }
 
-.flx.gap, .grid.gap { gap: 2ch }
+.flx.gap, .grid.gap { gap: 1rem }
 
 .padx, .pad {
   padding-left: 2ch;
@@ -67,8 +67,8 @@ section { margin: 2rem 0 }
 
 .expander {
   height: min-content;
-  transition: max-height var(--trans-expander);
   max-height: var(--size-expander-max);
+  transition: max-height var(--trans-expander);
 }
 .expander.closed {
   max-height: var(--size-expander-closed);

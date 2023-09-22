@@ -2,14 +2,14 @@
 ---
 body {
     --color-bg: #fff;
-    --color-text: #333;
+    --color-text: #444;
     --color-accent: #eee;
     --color-accent-dark: #ccc;
     --color-grey-text: #ccc;
     
     --size-outline: 1px;
     --size-outline-radius: 8px;
-    --size-card-min: 31ch;
+    --size-card-min: 30ch;
     --size-expander-max: 12rem;
     --size-expander-closed: 3.5rem;
 
@@ -18,4 +18,5 @@ body {
     --trans-btn-outline: 0.1s ease;
     --trans-btn-bg: 0.05s ease;
     --trans-expander: 0.1s linear;
+    --trans-text-color: 0.1s ease;
 }
