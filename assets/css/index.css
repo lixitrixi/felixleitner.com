@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+body { background: var(--color-bg) }
+
 header { border-bottom: var(--border) }
 
 img { max-width: 100% }
@@ -63,7 +65,7 @@ section { margin: 2rem 0 }
   cursor: pointer;
 }
 .btn:hover { border-color: var(--color-accent-dark) }
-.btn:active { background: var(--color-accent) }
+.btn:active { background: var(--color-btn-active) }
 
 .expander {
   height: min-content;

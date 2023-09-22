@@ -3,9 +3,9 @@
 body {
     --color-bg: #fff;
     --color-text: #444;
-    --color-accent: #eee;
-    --color-accent-dark: #ccc;
-    --color-grey-text: #ccc;
+    --color-accent: #ddd;
+    --color-accent-dark: #bbb;
+    --color-btn-active: #f6f6f6;
     
     --size-outline: 1px;
     --size-outline-radius: 8px;
