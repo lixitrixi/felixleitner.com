@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif:wght@500&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Noto', serif;
+    font-size: 1.5rem;
+}
