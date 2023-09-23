@@ -12,3 +12,5 @@ I've always been interested in game development. It was, after all, the medium t
 <img src="/assets/img/ship.png" width="300px">
 
 <img src="/assets/img/grey.png" width="500px">
+
+<img src="/assets/img/fire.gif" width="500px" style="background-color: #000">
