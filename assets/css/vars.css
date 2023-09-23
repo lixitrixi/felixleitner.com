@@ -1,11 +1,11 @@
----
----
 body {
     --color-bg: #fff;
-    --color-text: #444;
+    --color-text: #333;
+    --color-text-light: #666;
     --color-accent: #ddd;
     --color-accent-dark: #bbb;
     --color-btn-active: #f6f6f6;
+    --color-link-hover: #000;
     
     --size-outline: 1px;
     --size-outline-radius: 8px;

@@ -1,12 +1,12 @@
 <section>
   <h1>Hi, I'm Felix!</h1>
   <p>I’m a developer studying at the <a href="https://www.st-andrews.ac.uk/" target="_blank">University of St Andrews</a> in Scotland. I’m interested in AI and its ethical application, networking technology, and full-stack design/development.</p>
-  <p>Alongside my studies, I’ve done web development for <a href="https://www.loft.design/" target="_blank">Loft Design</a> and have interned at <a href="https://www.trackx.tech/" target="_blank">TrackX Technology</a>, a medical software company. I’m currently taking part in a research project involving constraint programming.</p>
+  <p>Alongside my studies I do web development for <a href="https://www.loft.design/" target="_blank">Loft Design</a> and have interned at <a href="https://www.trackx.tech/" target="_blank">TrackX Technology</a>, a medical software company. I’m currently taking part in a research project involving constraint programming.</p>
 </section>
 <div class="flx je"><img src="assets/img/running_blob.png" alt="A fluffy running character with a single eye." style="height: 4rem"/></div>
 <section id="skills">
   <h1>My Skills</h1>
-  <div class="mt grid gap dyn" id="skills-list">
+  <div class="mt grid gap dyn">
     {% assign skills = site.skills | sort: "order" %}
     {% for skill in skills %}
     {% if skill.unlisted == true %} {% continue %} {% endif %}
@@ -20,11 +20,16 @@
 <section id="projects">
   <h1>My Projects</h1>
   <p>Here are some of the personal projects I’ve completed during my journey as a developer!</p>
-  <div class="mt flx col gap" id="projects-list">
+  <div class="flx col gap" id="projects-list">
     {% assign projects = site.projects | sort: "order" %}
     {% for project in projects %}
     {% if project.unlisted == true %} {% continue %} {% endif %}<a class="btn pad" href="{{ project.url }}">
       <h2>{{ project.title }}</h2>{{ project.tools | split: ', ' | join: ' | ' }}</a>{% endfor %}
+  </div>
+  <div class="flx gap ac jc mt">
+    <div class="ptr nosel" onClick="projectsPrev()">←</div>
+    <div><span id="cur-page">1</span> / <span id="total-pages">1</span></div>
+    <div class="ptr nosel" onClick="projectsNext()">→</div>
   </div>
 </section>
 <section id="contact">

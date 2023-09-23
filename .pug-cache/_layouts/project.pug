@@ -1,5 +1,9 @@
 section
   h1 {{ page.title }}
+  | {% if page.source %}
+  h2 Source: #[a(href="{{ page.source }}" target="_blank") {{ page.source }}]
+  | {% endif %}
+  h1 Project!
 
 section 
   | {{ content }}

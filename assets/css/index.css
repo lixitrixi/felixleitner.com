@@ -8,6 +8,7 @@
 }
 
 body { background: var(--color-bg) }
+html { scroll-behavior: smooth }
 
 header { border-bottom: var(--border) }
 
@@ -62,10 +63,16 @@ section { margin: 2rem 0 }
   transition: border-width var(--trans-btn-outline),
     background-color var(--trans-btn-bg);
   text-decoration: none;
-  cursor: pointer;
 }
 .btn:hover { border-color: var(--color-accent-dark) }
 .btn:active { background: var(--color-btn-active) }
+
+.ptr, .btn { cursor: pointer }
+
+.nosel {
+  user-select: none;
+  -webkit-user-select: none;
+}
 
 .expander {
   height: min-content;

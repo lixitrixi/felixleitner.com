@@ -11,4 +11,17 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
-    layout: project
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "project"
+      type: "projects"
+    values:
+      layout: "project"
