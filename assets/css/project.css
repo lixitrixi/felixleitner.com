@@ -1,0 +1,13 @@
+#project-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+#project-content cap {
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--color-text-light);
+}

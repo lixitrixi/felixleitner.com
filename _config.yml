@@ -1,12 +1,30 @@
-exclude:
-  - notes
-
 domain: felixleitner.com
 
+plugins:
+  - jekyll-pug
+
+jekyll-pug:
+  debug: true
+
+collections_dir: collections
+
 collections:
+  skills:
+    output: false
   projects:
     output: true
-    permalink: /w/:slug
-  pages:
-    output: true
-    permalink: /:slug
+    permalink: /project/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

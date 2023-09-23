@@ -1,0 +1,36 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif:wght@700&display=swap";
+
+* { transition: color var(--trans-text-color) }
+
+body {
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+h1 {
+  font-family: 'Noto Serif', 'Times New Roman', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+a { color: var(--color-text) }
+a:hover, .btn:hover { color: var(--color-link-hover) }
+
+p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+code {
+  font-style: italic;
+  font-size: 0.9rem;
+}

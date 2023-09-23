@@ -1,7 +1,10 @@
+# Jekyll
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-.DS_Store
-notes
+.bundle/
+vendor/
+
+# Ruby
 Gemfile.lock

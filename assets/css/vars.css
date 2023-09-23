@@ -1,0 +1,22 @@
+body {
+    --color-bg: #fff;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-accent: #ddd;
+    --color-accent-dark: #bbb;
+    --color-btn-active: #f6f6f6;
+    --color-link-hover: #000;
+    
+    --size-outline: 1px;
+    --size-outline-radius: 8px;
+    --size-card-min: 30ch;
+    --size-expander-max: 12rem;
+    --size-expander-closed: 3.5rem;
+
+    --border: var(--size-outline) solid var(--color-accent);
+    
+    --trans-btn-outline: 0.1s ease;
+    --trans-btn-bg: 0.05s ease;
+    --trans-expander: 0.1s linear;
+    --trans-text-color: 0.1s ease;
+}
