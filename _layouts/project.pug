@@ -6,9 +6,11 @@ title: {{ page.title }}
 section
   h1 {{ page.title }}
   | {% if page.source %}
-  h2 Source: #[a(href="{{ page.source }}" target="_blank") {{ page.source }}]
+  | {% assign source = page.source | remove_first: "http://" | remove_first: "https://" %}
+  p #[strong Source:] #[a(href="{{ page.source }}" target="_blank") {{ source }}]
   | {% endif %}
-  h1 Project!
+
+hr
 
 section 
   | {{ content }}

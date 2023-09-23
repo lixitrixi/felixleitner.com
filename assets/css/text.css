@@ -29,3 +29,8 @@ p {
   text-align: justify;
   margin-bottom: 1rem;
 }
+
+code {
+  font-style: italic;
+  font-size: 0.9rem;
+}

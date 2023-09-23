@@ -29,3 +29,5 @@ function projectsUpdate() {
 
 $("#total-pages").text(numPages);
 projectsUpdate();
+
+// TODO: Avoid jumping vertically when navigating to a page with less items

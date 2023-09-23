@@ -1,8 +1,8 @@
 ---
 title: Arpeggio - A free Discord music bot
 tools: Python, discord.py, Wavelink
-timeframe: July 2020 - Present
-source: "https://github.com/lixitrixi/arpeggio"
+timeframe: Jul 2020 - Oct 2022
+source: https://github.com/lixitrixi/arpeggio
 ---
 Arpeggio is an automated Discord user account ("bot") that plays audio tracks and music in voice channels. It was my first larger project that I saw through to completion, and was also my first introduction to talking with other developers online.
 
@@ -11,4 +11,4 @@ My first version of Arpeggio was a few files that I copied to and ran on a GCP m
 <img src="/assets/img/arpy.png" width="400px">
 <cap>A demonstration of Apreggio's functionality: joining, playback, and track queueing</cap>
 
-Arpeggio taught me a lot about project management <b>(priorities!)</b> and the technical side of the Internet. Seeing all of my friends use it regularly like they would a more popular music bot has been very rewarding, and I hope it can grow to help more people enjoy their time online.
+Arpeggio taught me a lot about project management **(priorities!)** and the technical side of the Internet. Seeing all of my friends use it regularly like they would a more popular music bot has been very rewarding, and I hope it can grow to help more people enjoy their time online.

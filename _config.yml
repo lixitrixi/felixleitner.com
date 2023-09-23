@@ -3,6 +3,9 @@ domain: felixleitner.com
 plugins:
   - jekyll-pug
 
+jekyll-pug:
+  debug: true
+
 collections_dir: collections
 
 collections:
@@ -21,7 +24,7 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "project"
+      path: ""
       type: "projects"
     values:
       layout: "project"
