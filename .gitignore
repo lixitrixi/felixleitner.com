@@ -8,3 +8,6 @@ vendor/
 
 # Ruby
 Gemfile.lock
+
+# Pug
+.pug-cache/

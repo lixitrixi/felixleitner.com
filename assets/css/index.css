@@ -83,3 +83,9 @@ hr { border: none; border-bottom: var(--border) }
 .expander.closed {
   max-height: var(--size-expander-closed);
 }
+.expander-icon {
+  transition: transform var(--trans-expander-icon);
+}
+.expander:not(.closed) .expander-icon {
+  transform: rotate(180deg);
+}
