@@ -11,7 +11,10 @@
     {% for skill in skills %}
     {% if skill.unlisted == true %} {% continue %} {% endif %}
     <div class="btn pad ovf expander">
-      <h2>{{ skill.name }}</h2>
+      <div class="flx">
+        <h2>{{ skill.name }}</h2>
+        <h2 class="mla textgrey">⏷</h2>
+      </div>
       <div class="ml mt">{{ skill.content }}</div>
     </div>{% endfor %}
   </div>
