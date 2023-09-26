@@ -12,7 +12,7 @@ body {
     --size-card-min: 32ch;
     --size-expander-max: 12rem;
     --size-expander-closed: 3.5rem;
-    --size-caret-border-width: 2px;
+    --size-caret-border-width: 0.125rem;
 
     --border: var(--size-outline) solid var(--color-accent);
     
