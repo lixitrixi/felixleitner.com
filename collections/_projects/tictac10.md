@@ -3,6 +3,7 @@ title: TicTac10 - Tic-tac-toe with an AI opponent
 tools: Python
 timeframe: Aug 2021
 source: https://github.com/lixitrixi/tictac10
+order: 2
 ---
 This was my first proper dive into AI! After being unable to beat a level involving a 10x10 version of tic-tac-toe on a game I was playing ([Machinarium](https://amanita-design.net/games/machinarium.html)), I decided to simply build an AI that could beat it.
 
