@@ -13,7 +13,7 @@ section
 section#skills
   h1 My Skills
   .mt.grid.gap.dyn
-    | {% assign skills = site.skills | where_exp: "skill", "skill.unlisted != 'true'" | sort: "order" %}
+    | {% assign skills = site.skills | where_exp: "skill", "skill.unlisted != true" | sort: "order" %}
     | {% for skill in skills %}
     .btn.pad.ovf.expander
       .flx.ac
@@ -29,7 +29,7 @@ section#projects
   h1 My Projects
   p Here are some of the personal projects I’ve completed during my journey as a developer!
   #projects-list.flx.col.gap
-    | {% assign projects = site.projects | where_exp: "project", "project.unlisted != 'true'" | sort: "order" %}
+    | {% assign projects = site.projects | where_exp: "project", "project.unlisted != true" | sort: "order" %}
     | {% for project in projects %}
     a(href="{{ project.url }}").btn.pad
       h2 {{ project.title }}
