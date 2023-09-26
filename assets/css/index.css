@@ -84,8 +84,13 @@ hr { border: none; border-bottom: var(--border) }
   max-height: var(--size-expander-closed);
 }
 .expander-icon {
+  border: 0 solid var(--color-accent-dark);
+  border-width: var(--size-caret-border-width) var(--size-caret-border-width) 0 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  transform: rotate(45deg);
   transition: transform var(--trans-expander-icon);
 }
 .expander:not(.closed) .expander-icon {
-  transform: rotateX(180deg);
+  transform: rotate(135deg);
 }

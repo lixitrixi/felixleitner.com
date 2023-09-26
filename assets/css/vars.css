@@ -9,9 +9,10 @@ body {
     
     --size-outline: 1px;
     --size-outline-radius: 8px;
-    --size-card-min: 30ch;
+    --size-card-min: 32ch;
     --size-expander-max: 12rem;
     --size-expander-closed: 3.5rem;
+    --size-caret-border-width: 2px;
 
     --border: var(--size-outline) solid var(--color-accent);
     

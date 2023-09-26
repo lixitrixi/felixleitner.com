@@ -17,9 +17,9 @@ section#skills
     | {% for skill in skills %}
     | {% if skill.unlisted == true %} {% continue %} {% endif %}
     .btn.pad.ovf.expander
-      .flx
+      .flx.ac
+        .expander-icon.mr
         h2 {{ skill.name }}
-        h2.mla.textgrey.expander-icon.nosel ↓
       .ml.mt
         | {{ skill.content }}
     | {% endfor %}
