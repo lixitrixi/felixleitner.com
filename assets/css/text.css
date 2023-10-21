@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Serif:wght@700&display=swap";
 
-* { transition: color var(--trans-text-color) }
+/* * { transition: color var(--trans-text-color) } */
 
 body {
   font-family: 'Inter', 'Helvetica', sans-serif;
