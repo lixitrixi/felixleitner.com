@@ -6,6 +6,18 @@ $(".expander").on("click", function() {
   $(this).toggleClass("closed");
 });
 
+$(".hv-chsrc").on("mouseover", function() {
+  let el = $(this);
+  let tmp = el.attr("src");
+  el.attr("src", el.attr("hover-src"));
+  el.attr("hover-src", tmp);
+});
+$(".hv-chsrc").on("mouseout", function() {
+  let el = $(this);
+  let tmp = el.attr("src");
+  el.attr("src", el.attr("hover-src"));
+  el.attr("hover-src", tmp);
+});
 
 // Projects showcase pagination
 const perPage = 5;
