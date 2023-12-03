@@ -28,7 +28,7 @@ img(src="assets/img/painting_blob.png", alt="A blob with horns painting a line a
 section#projects
   h1 My Projects
   p Here are some of the personal projects I’ve completed during my journey as a developer!
-  #projects-list.flx.col.gap
+  #projects-list.flx.col.gap.keep-height
     | {% assign projects = site.projects | where_exp: "project", "project.unlisted != true" | sort: "order", "last" %}
     | {% for project in projects %}
     a(href="{{ project.url }}").btn.pad
@@ -43,5 +43,3 @@ section#projects
 section#contact
   h1 Contact Me
   p I’d love to hear from you! If you have a project in mind or just want to say hello, feel free to reach out to me over #[a(href="mailto:felix@felixleitner.com" target="_blank") email]. You can also check out my #[a(href="https://www.linkedin.com/in/felix-leitner-mittersinker-271b09200/" target="_blank") LinkedIn] or my #[a(href="https://github.com/lixitrixi" target="_blank") GitHub]!
-
-script(src="/assets/js/index.js")

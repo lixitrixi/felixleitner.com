@@ -19,6 +19,12 @@ $(".hv-chsrc").on("mouseout", function() {
   el.attr("hover-src", tmp);
 });
 
+$(document).ready(function() {
+  $(".keep-height").each(function() {
+    $(this).height($(this).height());
+  });
+});
+
 // Projects showcase pagination
 const perPage = 5;
 const projects = $("#projects-list").children();
@@ -41,5 +47,3 @@ function projectsUpdate() {
 
 $("#total-pages").text(numPages);
 projectsUpdate();
-
-// TODO: Avoid jumping vertically when navigating to a page with less items
