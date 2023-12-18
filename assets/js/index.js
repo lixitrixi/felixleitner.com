@@ -1,9 +1,15 @@
 if (!window.jQuery)
   throw new Error("jQuery is not loaded");
 
+$(".expander").attr("tabindex", 0);
 $(".expander").addClass("closed");
-$(".expander").on("click", function() {
-  $(this).toggleClass("closed");
+$(".expander").on({
+  mousedown: function(e) {
+    e.preventDefault();
+    $(this).toggleClass("closed");
+  },
+  focus: function() { $(this).removeClass("closed") },
+  blur: function() { $(this).addClass("closed") }
 });
 
 $(".hv-chsrc").on("mouseover", function() {

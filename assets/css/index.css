@@ -24,6 +24,10 @@ hr { border: none; border-bottom: var(--border) }
 .flx.jc { justify-content: center }
 .flx.je { justify-content: flex-end }
 
+.abs { position: absolute }
+
+.bg { background: var(--color-bg) }
+
 .grid { display: grid }
 .grid.dyn {
   grid-template-columns: repeat(auto-fit, minmax(var(--size-card-min), 1fr));
@@ -74,6 +78,8 @@ hr { border: none; border-bottom: var(--border) }
   user-select: none;
   -webkit-user-select: none;
 }
+
+.vis-focus:not(:focus) { opacity: 0 }
 
 .expander {
   height: min-content;

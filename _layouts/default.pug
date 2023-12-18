@@ -12,8 +12,9 @@ html(lang="en")
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js")
   body
+    a(href="#main").vis-focus.abs.mt.ml.bg Skip to content
     | {% include header %}
-    main.cont.padx
+    main#main.cont.padx
       | {{ content }}
     | {% include footer %}
   script(src="/assets/js/index.js")
