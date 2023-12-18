@@ -1,9 +1,16 @@
 if (!window.jQuery)
   throw new Error("jQuery is not loaded");
 
-$(".expander").attr("tabindex", 0);
-$(".expander").addClass("closed");
-$(".expander").on({
+let exp = $(".expander"); // TODO: avoid closing animation on page load
+exp.each(function() {
+  let h = $(this).get(0).offsetHeight;
+  h = h / parseFloat($(this).css("font-size"));
+  $(this).css("--max-height", h + "em");
+});
+exp.attr("tabindex", 0);
+exp.attr("role", "button");
+exp.addClass("closed");
+exp.on({
   mousedown: function(e) {
     e.preventDefault();
     $(this).toggleClass("closed");

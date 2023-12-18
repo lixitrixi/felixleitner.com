@@ -10,7 +10,6 @@ body {
     --size-outline: 1px;
     --size-outline-radius: 8px;
     --size-card-min: 32ch;
-    --size-expander-max: 12rem;
     --size-expander-closed: 3.5rem;
     --size-caret-border-width: 0.125rem;
 
@@ -18,7 +17,7 @@ body {
     
     --trans-btn-outline: 0.1s ease;
     --trans-btn-bg: 0.05s ease;
-    --trans-expander: 0.1s linear;
+    --trans-expander: 0.15s ease;
     --trans-expander-icon: 0.1s ease;
     --trans-text-color: 0.1s ease;
 }

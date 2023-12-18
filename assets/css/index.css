@@ -83,7 +83,7 @@ hr { border: none; border-bottom: var(--border) }
 
 .expander {
   height: min-content;
-  max-height: var(--size-expander-max);
+  max-height: var(--max-height);
   transition: max-height var(--trans-expander);
 }
 .expander.closed {
