@@ -79,6 +79,12 @@ hr { border: none; border-bottom: var(--border) }
   -webkit-user-select: none;
 }
 
+.text-cutoff {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .vis-focus:not(:focus) { opacity: 0 }
 
 .expander {

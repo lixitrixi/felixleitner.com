@@ -18,7 +18,7 @@ section#skills
     .btn.pad.ovf.expander.focusable
       .flx.ac
         .expander-icon.mr
-        h2 {{ skill.name }}
+        h2.text-cutoff {{ skill.name }}
       .ml.mt
         | {{ skill.content }}
     | {% endfor %}
@@ -32,7 +32,7 @@ section#projects
     | {% assign projects = site.projects | where_exp: "project", "project.unlisted != true" | sort: "order", "last" %}
     | {% for project in projects %}
     a.btn.pad(href="{{ project.url }}")
-      h2 {{ project.title }}
+      h2.text-cutoff {{ project.title }}
       | {{ project.tools | split: ', ' | join: ' | ' }}
     | {% endfor %}
   .flx.gap.ac.jc.mt
