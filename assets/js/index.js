@@ -36,7 +36,8 @@ $(".hv-chsrc").on("mouseout", function() {
 
 $(document).ready(function() {
   $(".keep-height").each(function() {
-    $(this).height($(this).height());
+    let h = $(this).height() / parseFloat($(this).css("font-size"));
+    $(this).css("height", h + "em");
   });
 });
 
