@@ -1,22 +1,24 @@
 if (!window.jQuery)
   throw new Error("jQuery is not loaded");
 
+$(".focusable").attr("tabindex", 0);
+$(document).on("keydown", function(e) {
+  let keycode = e.charCode || e.keyCode;
+  if (keycode == 13 || keycode == 32) {
+    $(e.target).click();
+  }
+});
+
 let exp = $(".expander"); // TODO: avoid closing animation on page load
 exp.each(function() {
   let h = $(this).get(0).offsetHeight;
   h = h / parseFloat($(this).css("font-size"));
   $(this).css("--max-height", h + "em");
 });
-exp.attr("tabindex", 0);
-exp.attr("role", "button");
 exp.addClass("closed");
-exp.on({
-  mousedown: function(e) {
-    e.preventDefault();
-    $(this).toggleClass("closed");
-  },
-  focus: function() { $(this).removeClass("closed") },
-  blur: function() { $(this).addClass("closed") }
+exp.on("click", function(e) {
+  e.preventDefault();
+  $(this).toggleClass("closed");
 });
 
 $(".hv-chsrc").on("mouseover", function() {

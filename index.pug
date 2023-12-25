@@ -15,7 +15,7 @@ section#skills
   .mt.grid.gap.dyn
     | {% assign skills = site.skills | where_exp: "skill", "skill.unlisted != true" | sort: "order", "last" %}
     | {% for skill in skills %}
-    .btn.pad.ovf.expander
+    .btn.pad.ovf.expander.focusable
       .flx.ac
         .expander-icon.mr
         h2 {{ skill.name }}
@@ -36,9 +36,9 @@ section#projects
       | {{ project.tools | split: ', ' | join: ' | ' }}
     | {% endfor %}
   .flx.gap.ac.jc.mt
-    .ptr.nosel(onClick="projectsPrev()") ←
+    .ptr.nosel.focusable(onClick="projectsPrev()") ←
     div #[span#cur-page 1] / #[span#total-pages 1]
-    .ptr.nosel(onClick="projectsNext()") →
+    .ptr.nosel.focusable(onClick="projectsNext()") →
 
 section#contact
   h1 Contact Me
