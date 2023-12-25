@@ -1,6 +1,6 @@
 ---
 name: Databases
-order: 3
+order: 5
 ---
-- SQL Server, SQLite
+- SQL Server, SQLite, MySQL
 - Database structure and security

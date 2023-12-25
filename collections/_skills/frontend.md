@@ -1,6 +1,6 @@
 ---
 name: Front-End Design/Development
-order: 1
+order: 2
 ---
 - HTML5, CSS3, JavaScript
 - jQuery, Sass, Pug/Jade

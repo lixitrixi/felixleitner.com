@@ -1,6 +1,6 @@
 ---
 name: Software Engineering
-order: 4
+order: 3
 ---
 - Java, C, C#
 - Haskell, Rust
