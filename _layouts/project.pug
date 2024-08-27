@@ -9,7 +9,10 @@ section
   h1 {{ page.title }}
   | {% if page.source %}
   | {% assign source = page.source | remove_first: "http://" | remove_first: "https://" %}
-  p #[strong Source:] #[a(href="{{ page.source }}" target="_blank") {{ source }}]
+  div #[strong Source:] #[a(href="{{ page.source }}" target="_blank") {{ source }}]
+  | {% endif %}
+  | {% if page.timeframe %}
+  div #[strong Timeframe:] {{ page.timeframe }}
   | {% endif %}
 
 hr

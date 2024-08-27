@@ -1,6 +1,6 @@
 ---
 title: Ray Casting
-tools: Python, Pygame
+tools: Pygame
 timeframe: Jun 2022
 order: 5
 ---

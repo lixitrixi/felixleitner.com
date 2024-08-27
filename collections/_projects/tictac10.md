@@ -1,5 +1,6 @@
 ---
-title: TicTac10 - Tic-tac-toe with an AI opponent
+title: TicTac10
+desc: Tic-tac-toe with an AI opponent
 tools: Python
 timeframe: Aug 2021
 source: https://github.com/lixitrixi/tictac10

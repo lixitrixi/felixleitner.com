@@ -1,5 +1,6 @@
 ---
-title: Singularity Solutions - My first web page
+title: Singularity Solutions
+desc: My first web page
 tools: HTML, CSS
 timeframe: Jan 2021
 link: http://felixleitner.com/singularity/

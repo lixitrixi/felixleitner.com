@@ -1,6 +1,7 @@
 ---
-title: Ropes - A 2D physics simulation
-tools: Python, Pygame
+title: Ropes
+desc: A 2D physics simulation
+tools: Pygame
 timeframe: Aug 2021
 source: https://github.com/lixitrixi/ropes
 order: 3

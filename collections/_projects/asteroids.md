@@ -1,6 +1,7 @@
 ---
-title: Asteroids - A Pygame version of the classic game
-tools: Python, Pygame
+title: Asteroids
+desc: A Pygame version of the classic game
+tools: Pygame
 timeframe: Apr 2021 - Feb 2022
 order: 4
 ---

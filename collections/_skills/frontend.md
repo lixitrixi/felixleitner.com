@@ -2,6 +2,6 @@
 name: Front-End Design/Development
 order: 2
 ---
-- HTML5, CSS3, JavaScript
-- jQuery, Sass, Pug/Jade
-- Webflow
+- Angular, React, jQuery
+- Sass, Pug/Jade
+- Figma, Webflow, Jekyll

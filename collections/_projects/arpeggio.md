@@ -1,6 +1,7 @@
 ---
-title: Arpeggio - A free Discord music bot
-tools: Python, discord.py, Wavelink
+title: Arpeggio
+desc: A free Discord music bot
+tools: Discord.py, Wavelink
 timeframe: Jul 2020 - Oct 2022
 source: https://github.com/lixitrixi/arpeggio
 order: 1

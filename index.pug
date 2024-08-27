@@ -4,8 +4,11 @@ title: Felix Leitner
 ---
 section
   h1 Hi, I'm Felix!
-  p I’m a developer studying at the #[a(href="https://www.st-andrews.ac.uk/" target="_blank") University of St Andrews] in Scotland. I’m interested in AI (game theory, constraint programming), networking technology, and full-stack web design/development.
-  p Alongside my studies I do web development for #[a(href="https://www.loft.design/" target="_blank") Loft Design] and have interned at #[a(href="https://www.trackx.tech/" target="_blank") TrackX Technology], a medical software company. I’m currently taking part in a #[a(href="https://github.com/conjure-cp" target="_blank") research project] involving constraint programming.
+  p I’m a developer studying at the #[a(href="https://www.st-andrews.ac.uk/" target="_blank") University of St Andrews] in Scotland. I’m interested in many different areas of CS, especially deterministic AI, networking technology, and full-stack web design/development.
+  p Alongside my studies I do web development for #[a(href="https://www.loft.design/" target="_blank") Loft Design] and have interned at #[a(href="https://www.savant.com/" target="_blank") Savant Systems] and #[a(href="https://www.trackx.tech/" target="_blank") TrackX Technology]. I enjoy maintaining and contributing to open-source projects, both in my free time and as part of my degree:
+  ul.padx
+    li I have contributed to the #[a(href="https://github.com/conjure-cp" target="_blank") Conjure] constraint programming project and am now mentoring incoming members.
+    li I maintain the #[a(href="https://github.com/lixitrixi/planning" target="_blank") Planning] Rust library for generic minimal action planning.
 
 .flx.je
   img.hv-chsrc(src="assets/img/running_blob.png", hover-src="assets/img/running_blob.png", alt="A fluffy running character with a single eye." style="height: 4rem")
@@ -23,7 +26,7 @@ section#skills
         | {{ skill.content }}
     | {% endfor %}
 
-img(src="assets/img/painting_blob.png", alt="A blob with horns painting a line across the page." style="height: 5rem")
+img(src="assets/img/painting_blob.png", alt="A round floating character with horns painting a line across the page." style="height: 5rem")
 
 section#projects
   h1 My Projects
@@ -31,9 +34,7 @@ section#projects
   #projects-list.flx.col.gap.keep-height
     | {% assign projects = site.projects | where_exp: "project", "project.unlisted != true" | sort: "order", "last" %}
     | {% for project in projects %}
-    a.btn.pad(href="{{ project.url }}")
-      h2.text-cutoff {{ project.title }}
-      | {{ project.tools | split: ', ' | join: ' | ' }}
+    | {% include project_card project=project %}
     | {% endfor %}
   .flx.gap.ac.jc.mt
     .ptr.nosel.focusable(onClick="projectsPrev()") ←
@@ -42,4 +43,4 @@ section#projects
 
 section#contact
   h1 Contact Me
-  p I’d love to hear from you! If you have a project in mind or just want to say hello, feel free to reach out to me over #[a(href="mailto:felix@felixleitner.com" target="_blank") email]. You can also check out my #[a(href="https://www.linkedin.com/in/felix-leitner-mittersinker-271b09200/" target="_blank") LinkedIn] or my #[a(href="https://github.com/lixitrixi" target="_blank") GitHub]!
+  p I’d love to hear from you! If you have a project in mind or just want to say hello, feel free to reach out at felix@[this domain]. You can also check out my #[a(href="https://www.linkedin.com/in/felix-leitner-mittersinker-271b09200/" target="_blank") LinkedIn] or my #[a(href="https://github.com/lixitrixi" target="_blank") GitHub]!

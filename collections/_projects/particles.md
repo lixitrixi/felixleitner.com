@@ -1,6 +1,6 @@
 ---
 title: Particle Masks
-tools: Python, Pygame
+tools: Pygame
 timeframe: May 2022
 source: https://github.com/lixitrixi/particle-masks
 ---

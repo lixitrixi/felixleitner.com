@@ -1,0 +1,6 @@
+a.btn.pad(href="{{ project.url }}")
+  h2.text-cutoff {{ project.title }} {% if project.desc %} : {{ project.desc }} {% endif %}
+  | {% if project.timeframe %}
+  | {{ project.timeframe }} |
+  | {% endif %}
+  | {{ project.tools | split: ', ' | join: ', ' }}
