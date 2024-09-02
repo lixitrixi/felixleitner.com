@@ -2,7 +2,6 @@
 title: Ray Casting
 tools: Pygame
 timeframe: Jun 2022
-order: 5
 ---
 I've always been interested in 3D computer graphics, and this project gave me some hands-on experience with it. I created a camera object that could move around a 3D scene, and placed a sphere in the middle of it. By shooting "rays" from the camera at many different angles and calculating their intersection with the sphere, I was able to render the sphere onto a 2D screen.
 

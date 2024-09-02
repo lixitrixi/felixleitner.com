@@ -11,10 +11,10 @@ html(lang="en")
     title {{ page.title }}
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js")
-  body
+  body.flx.col
     a(href="#main").vis-focus.abs.mt.ml.bg Skip to content
     | {% include header %}
-    main#main.cont.padx
+    main#main.cont.padx.grow
       | {{ content }}
     | {% include footer %}
   script(src="/assets/js/index.js")

@@ -1,18 +1,31 @@
 ---
 layout: default
-title: {{ page.title }}
+title: 'Felix Leitner - {{ page.title }}'
 ---
 
 link(rel="stylesheet" href="/assets/css/project.css")
 
 section
+  a(href="/#projects") ← Back to projects
+
+section
   h1 {{ page.title }}
+  | {% if page.desc %}
+  i {{ page.desc }}
+  | {% endif %}
+  | {% if page.site %}
+  | {% assign site = page.site | remove_first: "http://" | remove_first: "https://" %}
+  div.mt #[strong Live:] #[a(href="{{ page.site }}" target="_blank") {{ site }}]
+  | {% endif %}
   | {% if page.source %}
   | {% assign source = page.source | remove_first: "http://" | remove_first: "https://" %}
-  div #[strong Source:] #[a(href="{{ page.source }}" target="_blank") {{ source }}]
+  div.mt #[strong Source:] #[a(href="{{ page.source }}" target="_blank") {{ source }}]
   | {% endif %}
   | {% if page.timeframe %}
   div #[strong Timeframe:] {{ page.timeframe }}
+  | {% endif %}
+  | {% if page.tools %}
+  div #[strong Tools:] {{ page.tools }}
   | {% endif %}
 
 hr

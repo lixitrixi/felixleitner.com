@@ -1,7 +1,7 @@
 ---
 title: Gaia
 tools: Discord, Gravit
-timeframe: 2020-2022
+timeframe: 2020 - 2022
 unlisted: true
 ---
 Gaia was a 2 year long political roleplay I was a part of together with 5 other people. Each member played the part of a country on a fictional planet called Gaia, drafting treaties, expanding territories, and developing technologies. In the late stage of the game, we even travelled to other planets to establish colonies.

@@ -7,7 +7,10 @@
   box-sizing: border-box;
 }
 
-body { background: var(--color-bg) }
+body {
+  background: var(--color-bg);
+  min-height: 100vh;
+}
 html { scroll-behavior: smooth }
 
 header { border-bottom: var(--border) }
@@ -23,6 +26,8 @@ hr { border: none; border-bottom: var(--border) }
 .flx.ac { align-items: center }
 .flx.jc { justify-content: center }
 .flx.je { justify-content: flex-end }
+
+.flx .grow { flex-grow: 1 }
 
 .abs { position: absolute }
 
