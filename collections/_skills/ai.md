@@ -3,5 +3,5 @@ name: Artificial Intelligence
 order: 1
 ---
 - Constraint programming
-- Game-playing algorithms
+- Optimal strategy search algorithms
 - Video game agent behaviour
